@@ -11,7 +11,7 @@
         }, t.apply(this, arguments)
     }
     var s = {
-            strings: ["WEB DEVELOPER", "ANDROID DEVELOPER", "UI DESIGNER", "UX DESIGNER"],
+            strings: ["WEB DEVELOPMENT", "ANDROID DEVELOPMENT", "UI DESIGNING", "UX DESIGNING"],
             stringsElement: null,
             typeSpeed: 0,
             startDelay: 0,
