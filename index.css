@@ -174,13 +174,12 @@ button:hover {
 .container2 .main .skills .soft-skills .skill-logo {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
 }
 
 .container2 .main .skills .computer-skills .title,
 .container2 .main .skills .soft-skills .title {
-    font-size: 60px;
-    /* left to add border for text */
+    font-size: 50px;
     color: aquamarine;
 }
 
