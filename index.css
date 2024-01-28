@@ -13,6 +13,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .header {
@@ -26,6 +27,7 @@ body {
     padding: 25px 10%;
     background-color: #1f242d;
     z-index: 10;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -59,6 +61,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .intro h3 {
@@ -141,13 +144,15 @@ button:hover {
     /* height: 100vh; */
     padding: 10rem;
     background-color: #1f242d;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container2 .main {
+    margin-top: -2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,18 +228,23 @@ button:hover {
     .container1 {
         display: flex;
         flex-wrap: wrap-reverse;
-        margin-top: 35%;
+        margin-top: 21%;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100vw;
+        max-width: max-content;
     }
     .profile img {
+        overflow-x: hidden;
         position: relative;
         padding: 0;
-        margin-left: -5.4%;
+        margin-left: 2%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-top: 2%; */
-        height: 250px;
-        width: 250px;
+        margin-top: 2%;
+        height: 28vh;
+        width: 49vw;
     }
     .container1 .intro {
         padding: 0;
@@ -267,13 +277,83 @@ button:hover {
         background-color: #1f242d;
         z-index: 10;
     }
+    /* responsiveness of container 2 */
+    .container2 {
+        overflow-x: hidden;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 2%;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container2 .main {
+        margin-top: -150%;
+    }
+    .container2 .main .discription {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* font: smaller; */
+        flex-direction: column;
+        margin: 100px 100px 100px 100px;
+        /* font-size: 1.4rem; */
+    }
+    .container2 .main .discription h1,
+    h2,
+    h3,
+    p {
+        text-align: center;
+        font-size: smaller;
+        flex-wrap: wrap;
+        padding: 2rem;
+        /* font-size: 5px; */
+    }
+    .container2 .main .skills {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 50px 50px 50px;
+        padding: 1rem;
+        margin-left: 18%;
+    }
+    .container2 .main .skills .computer-skills,
+    .container2 .main .skills .soft-skills {
+        margin-top: -45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        /* padding: 1rem; */
+    }
+    .container2 .main .skills .computer-skills .skill-logo,
+    .container2 .main .skills .soft-skills .skill-logo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+        align-items: center;
+        justify-content: center;
+        /* aspect-ratio: 4/4; */
+        /* padding: 1rem; */
+    }
+    .container2 .main .skills .computer-skills li,
+    .container2 .main .skills .soft-skills li {
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-inline-start: 2%;
+    }
 }
 
 .cont1 {
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     margin-top: 10px;
     background-color: #1f242d;
+    overflow-x: hidden;
     /* display: grid; */
 }
 
@@ -300,7 +380,7 @@ button:hover {
     height: 35vh;
     width: 20vw;
     background-color: #181d23;
-    border: 1px solid #6aa4e6;
+    border: 1px solid #0c0c0c;
     margin-left: 8%;
     z-index: 5%;
     transition: all .7s ease;
@@ -309,4 +389,13 @@ button:hover {
 .cont1 .cards li:hover {
     box-shadow: 0 0 40px #4b78ac;
     transform: scale(1.2);
+}
+
+.cont1 .cards ul li img {
+    height: 90px;
+    width: 90px;
+    border: #0ef;
+    /* border-radius: 100px solid aqua; */
+    margin-left: 40%;
+    margin-top: 10%;
 }
