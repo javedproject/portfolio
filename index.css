@@ -141,7 +141,7 @@ button:hover {
 /* section 2 */
 
 .container2 {
-    /* height: 100vh; */
+    height: auto;
     padding: 10rem;
     background-color: #1f242d;
     margin-top: 5px;
@@ -284,7 +284,7 @@ button:hover {
         flex-wrap: wrap-reverse;
         margin-top: 2%;
         overflow-x: hidden;
-        height: 100vh;
+        height: auto;
         width: 100vw;
     }
     .container2 .main {
@@ -346,6 +346,13 @@ button:hover {
         justify-content: center;
         margin-inline-start: 2%;
     }
+    .cont1 .cards ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
 .cont1 {
@@ -354,7 +361,7 @@ button:hover {
     margin-top: 10px;
     background-color: #1f242d;
     overflow-x: hidden;
-    /* display: grid; */
+ 
 }
 
 .cont1 .name {
@@ -398,4 +405,67 @@ button:hover {
     /* border-radius: 100px solid aqua; */
     margin-left: 40%;
     margin-top: 10%;
+}
+
+
+/*  */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #1f242d;
+    height: 100vh;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: white;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    padding: 7px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.contact h2 {
+    font-size: 40px;
 }
