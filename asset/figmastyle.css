@@ -1,3 +1,9 @@
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -5,9 +11,10 @@
 }
 
 .box {
-  width: 45%;
-  max-width: 300px;
+  /* width: 40%; */
+  max-width: 200px;
   padding: 20px;
+  background-color: white;
   border: 1px solid #ccc;
   margin: 20px;
 }
@@ -15,6 +22,7 @@
 h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 p {
@@ -36,6 +44,18 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+/* .pic {
+  align-items: center;
+} */
+.pic img {
+  height: 40vh;
+  width: 20vh;
+  margin-left: 6%;
+  /* align-self: center; */
+}
+.box button {
+  padding: 10px;
 }
 
 @media screen and (max-width: 768px) {

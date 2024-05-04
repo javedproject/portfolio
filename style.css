@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+}
+
+.header.sticky {
+  border-bottom: white;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Introduction section styles */
+.container1 {
+  margin-top: 10%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  flex: 1 1 50%;
+}
+
+.profile img {
+  /* margin-left: -30%; */
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .container1 {
+    margin-top: 15%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .discription {
+    margin-right: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card {
+    width: 30vw;
+    /* gap: 10%; */
+    padding: 20px;
+    margin-left: 10%;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #c4c4c4;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-right: 0;
+    font-size: 1rem;
+    margin: 3rem 0;
+  }
+}

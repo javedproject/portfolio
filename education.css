@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+  background-image: url(asset/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.header.sticky {
+  border-bottom: white;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+.logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+.e-container {
+  /* gap: 10%; */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.e-container h3 {
+  text-align: center;
+}
+
+.econtainer {
+  /* row-gap: 10%; */
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around;
+  /* width: 10vw; */
+  margin-top: 150px;
+}
+
+.box {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.school-image {
+  justify-content: center;
+
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.school-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.school-details {
+  font-size: 14px;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .intro {
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    margin-top: 20px;
+  }
+
+  .navbar a {
+    margin-left: 0;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .discription {
+    margin-right: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card {
+    width: 30vw;
+    /* gap: 10%; */
+    padding: 20px;
+    margin-left: 10%;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #c4c4c4;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-right: 0;
+    font-size: 1rem;
+    margin: 3rem 0;
+  }
+  .box {
+    width: 280px;
+  }
+  .e-container {
+    height: auto;
+    margin-top: -20%;
+  }
+  .container {
+    margin-top: 40%;
+  }
+  .card {
+    width: calc(40% - 1px);
+  }
+}
