@@ -7,6 +7,9 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #efefef;
+  /* background-image: url(asset/bg.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header.sticky {
